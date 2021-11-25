@@ -32,7 +32,8 @@ const appRoutes: Routes = [
       },
     ],
   },
-  { path: "not-found", component: PageNotFoundComponent },
+  // { path: "not-found", component: PageNotFoundComponent },
+  { path: "not-found", component: ErrorPageComponent },
   { path: "**", redirectTo: "/not-found" }, //catches all the other paths not found, this has to be the last route in the appRoutes
 ];
 
